@@ -28,7 +28,7 @@
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-..\output\main.o: ..\User\./motor-control/bsp_motor_control.h
-..\output\main.o: ..\User\./key/bsp_exti_key.h
-..\output\main.o: ..\User\./basetime/bsp_basetime.h
-..\output\main.o: ..\User\./led/bsp_led.h
+..\output\main.o: ..\BSP\motor-control\bsp_motor_control.h
+..\output\main.o: ..\BSP\key\bsp_exti_key.h
+..\output\main.o: ..\BSP\basetime\bsp_basetime.h
+..\output\main.o: ..\BSP\led\bsp_led.h

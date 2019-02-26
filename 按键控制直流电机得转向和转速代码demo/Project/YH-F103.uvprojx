@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\User;..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc</IncludePath>
+              <IncludePath>..\User;..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\BSP\basetime;..\BSP\key;..\BSP\led;..\BSP\motor-control;..\User\motor_steering_change</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -704,54 +704,14 @@
               <FilePath>..\User\stm32f10x_it.h</FilePath>
             </File>
             <File>
-              <FileName>bsp_motor_control.c</FileName>
+              <FileName>motor_steering_change.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\User\motor-control\bsp_motor_control.c</FilePath>
+              <FilePath>..\User\motor_steering_change\motor_steering_change.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_motor_control.h</FileName>
+              <FileName>motor_steering_change.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\User\motor-control\bsp_motor_control.h</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_exti_key.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\key\bsp_exti_key.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_exti_key.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\key\bsp_exti_key.h</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_basetime.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\basetime\bsp_basetime.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_basetime.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\basetime\bsp_basetime.h</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_motor_steering_change.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\motor_steering_change\bsp_motor_steering_change.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_motor_steering_change.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\motor_steering_change\bsp_motor_steering_change.h</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\led\bsp_led.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_led.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\led\bsp_led.h</FilePath>
+              <FilePath>..\User\motor_steering_change\motor_steering_change.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -762,6 +722,51 @@
               <FileName>程序说明.txt</FileName>
               <FileType>5</FileType>
               <FilePath>..\DOC\程序说明.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>bsp_basetime.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\basetime\bsp_basetime.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_basetime.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\basetime\bsp_basetime.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_exti_key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\key\bsp_exti_key.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_exti_key.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\key\bsp_exti_key.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\led\bsp_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\led\bsp_led.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_motor_control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\motor-control\bsp_motor_control.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_motor_control.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\motor-control\bsp_motor_control.h</FilePath>
             </File>
           </Files>
         </Group>

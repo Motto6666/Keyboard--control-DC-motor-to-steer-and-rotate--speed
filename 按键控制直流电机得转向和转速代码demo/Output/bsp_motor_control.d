@@ -1,5 +1,5 @@
-..\output\bsp_motor_control.o: ..\User\motor-control\bsp_motor_control.c
-..\output\bsp_motor_control.o: ..\User\./motor-control/bsp_motor_control.h
+..\output\bsp_motor_control.o: ..\BSP\motor-control\bsp_motor_control.c
+..\output\bsp_motor_control.o: ..\BSP\motor-control\bsp_motor_control.h
 ..\output\bsp_motor_control.o: ..\Libraries\CMSIS\stm32f10x.h
 ..\output\bsp_motor_control.o: ..\Libraries\CMSIS\core_cm3.h
 ..\output\bsp_motor_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h

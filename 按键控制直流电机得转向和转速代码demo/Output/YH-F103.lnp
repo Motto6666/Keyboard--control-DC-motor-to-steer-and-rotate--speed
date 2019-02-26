@@ -27,11 +27,11 @@
 "..\output\stm32f10x_wwdg.o"
 "..\output\main.o"
 "..\output\stm32f10x_it.o"
+"..\output\motor_steering_change.o"
+"..\output\bsp_basetime_1.o"
+"..\output\bsp_exti_key_1.o"
+"..\output\bsp_led_1.o"
 "..\output\bsp_motor_control.o"
-"..\output\bsp_exti_key.o"
-"..\output\bsp_basetime.o"
-"..\output\bsp_motor_steering_change.o"
-"..\output\bsp_led.o"
 --strict --scatter "..\Output\YH-F103.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

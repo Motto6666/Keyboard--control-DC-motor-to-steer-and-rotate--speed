@@ -1,5 +1,5 @@
 ..\output\bsp_exti_key.o: ..\User\key\bsp_exti_key.c
-..\output\bsp_exti_key.o: ..\User\./key/bsp_exti_key.h
+..\output\bsp_exti_key.o: ..\User\key\bsp_exti_key.h
 ..\output\bsp_exti_key.o: ..\Libraries\CMSIS\stm32f10x.h
 ..\output\bsp_exti_key.o: ..\Libraries\CMSIS\core_cm3.h
 ..\output\bsp_exti_key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -29,5 +29,5 @@
 ..\output\bsp_exti_key.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 ..\output\bsp_exti_key.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 ..\output\bsp_exti_key.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-..\output\bsp_exti_key.o: ..\User\./basetime/bsp_basetime.h
-..\output\bsp_exti_key.o: ..\User\./motor_steering_change/bsp_motor_steering_change.h
+..\output\bsp_exti_key.o: ..\User\basetime\bsp_basetime.h
+..\output\bsp_exti_key.o: ..\User\motor_steering_change\bsp_motor_steering_change.h

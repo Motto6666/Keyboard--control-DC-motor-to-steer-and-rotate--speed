@@ -1,5 +1,5 @@
 ..\output\bsp_basetime.o: ..\User\basetime\bsp_basetime.c
-..\output\bsp_basetime.o: ..\User\./basetime/bsp_basetime.h
+..\output\bsp_basetime.o: ..\User\basetime\bsp_basetime.h
 ..\output\bsp_basetime.o: ..\Libraries\CMSIS\stm32f10x.h
 ..\output\bsp_basetime.o: ..\Libraries\CMSIS\core_cm3.h
 ..\output\bsp_basetime.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
