@@ -62,7 +62,7 @@ void MOTOR_CONTROL_Config(void)
 
 	/*--------------------输出比较结构体初始化-------------------*/	
 	// 占空比配置
-	extern volatile uint16_t CCR1_Val; //PWM波占空比初始值为80%
+	extern volatile uint16_t Motor_Speed; //PWM波占空比初始值为80%
 	
 	TIM_OCInitTypeDef  TIM_OCInitStructure;
 	// 配置为PWM模式1
@@ -73,7 +73,7 @@ void MOTOR_CONTROL_Config(void)
 	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
 	
 	// 输出比较通道 1
-	TIM_OCInitStructure.TIM_Pulse = CCR1_Val;
+	TIM_OCInitStructure.TIM_Pulse = Motor_Speed;
 	TIM_OC1Init(GENERAL_TIM, &TIM_OCInitStructure);
 	//使能TIM3自动重装载
 	TIM_OC1PreloadConfig(GENERAL_TIM, TIM_OCPreload_Enable);
@@ -86,7 +86,7 @@ void MOTOR_CONTROL_Config(void)
 
 }
 
-void MOTOR_SPEED_CHANGE(TIM_TypeDef* TIMx, uint16_t CCR_Val)
+void MOTOR_SPEED_CHANGE(uint16_t Motor_Speed)
 {
-	TIM_SetCompare1(TIMx,CCR_Val);
+	TIM_SetCompare1(GENERAL_TIM,Motor_Speed);
 }

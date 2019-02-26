@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\Output\YH-F103.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\Output\YH-F103.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Feb 26 11:22:19 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Feb 26 17:26:07 2019
 <BR><P>
 <H3>Maximum Stack Usage =         64 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -558,8 +558,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[77]"></a>MOTOR_SPEED_CHANGE</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, bsp_motor_control.o(i.MOTOR_SPEED_CHANGE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MOTOR_SPEED_CHANGE
+<P><STRONG><a name="[77]"></a>MOTOR_SPEED_CHANGE</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, bsp_motor_control.o(i.MOTOR_SPEED_CHANGE))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MOTOR_SPEED_CHANGE
 </UL>
 <BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_SetCompare1
 </UL>
@@ -665,7 +665,7 @@ Global Symbols
 <P><STRONG><a name="[8]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.UsageFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[55]"></a>main</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[55]"></a>main</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = main &rArr; MOTOR_CONTROL_Config &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MOTOR_SPEED_CHANGE

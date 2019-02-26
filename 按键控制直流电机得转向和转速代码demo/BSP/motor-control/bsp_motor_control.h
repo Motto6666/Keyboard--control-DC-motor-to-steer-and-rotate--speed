@@ -34,6 +34,6 @@
 #define            GENERAL_TIM_Prescaler         71
 
 void MOTOR_CONTROL_Config(void);
-void MOTOR_SPEED_CHANGE(TIM_TypeDef* TIMx, uint16_t CCR_Val);
+void MOTOR_SPEED_CHANGE(uint16_t Motor_Speed);
 
 #endif /*__BSP_MOTOR_CONTROL_H*/

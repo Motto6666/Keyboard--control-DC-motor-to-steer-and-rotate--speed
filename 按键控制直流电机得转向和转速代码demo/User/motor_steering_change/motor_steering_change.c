@@ -4,7 +4,7 @@
 
 static uint16_t steering_and_speed_change = 1;//电机转向、转速增/减标识符,初始值为1
 extern volatile uint16_t time; //计数时间，单位为ms，初始值为0
-extern volatile uint16_t CCR1_Val;//PWM波占空比初始值为80%
+extern volatile uint16_t Motor_Speed;//PWM波占空比初始值为80%
 
 void motor_steering_change(void)
 {
@@ -31,23 +31,23 @@ void motor_steering_change(void)
 			switch(steering_and_speed_change)//选择电机转速增/减模式
 			{
 				case speed_increase_mode:
-					if(CCR1_Val >= 8)//当PWM波占空比≥80%时
+					if(Motor_Speed >= 8)//当PWM波占空比≥80%时
 					{
-						CCR1_Val = 8;//PWM波占空比恢复到最初的值(80%)
+						Motor_Speed = 8;//PWM波占空比恢复到最初的值(80%)
 					}
 					else
 					{
-						CCR1_Val += 2; //PWM波占空比增加20%
+						Motor_Speed += 2; //PWM波占空比增加20%
 					}break;
 				
 				case speed_reduce_mode:
-					if(CCR1_Val <= 2)//当PWM波占空比≤20%时
+					if(Motor_Speed <= 2)//当PWM波占空比≤20%时
 					{
-						CCR1_Val = 8;//PWM波占空比恢复到最初的值(80%)
+						Motor_Speed = 8;//PWM波占空比恢复到最初的值(80%)
 					}
 					else
 					{
-						CCR1_Val -= 2;//PWM波占空比减少20%
+						Motor_Speed -= 2;//PWM波占空比减少20%
 					}break;
 				
 				default:  break;

@@ -4,7 +4,7 @@
 #include "bsp_basetime.h"
 #include "bsp_led.h"
 
-volatile uint16_t CCR1_Val = 8;//PWM波占空比初始值为80%
+volatile uint16_t Motor_Speed = 8;//PWM波占空比初始值为80%
 
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
 	
 	while(1)
 	{
-		MOTOR_SPEED_CHANGE(GENERAL_TIM,CCR1_Val);//电机速度控制
+		MOTOR_SPEED_CHANGE(Motor_Speed);//电机速度控制
 	}
 }
 
